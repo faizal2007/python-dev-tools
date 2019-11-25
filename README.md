@@ -12,3 +12,14 @@ Enable virtual environment
 ```console
 user@server:~$ source venv/bin/activate
 ```
+
+### Sqlite 
+```
+   + for easy testing is easy to use lite version db such as sqlite
+   + if server/pc not provide (linux)
+```
+curl -O https://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
+
+```console
+user@server:~$ curl -O https://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
+```
