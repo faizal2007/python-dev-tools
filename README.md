@@ -19,12 +19,21 @@ user@server:~$ source venv/bin/activate
    + sometime it easy to use lite version db such as sqlite (for testing)
    + if server/pc not provide (linux)
 ```
-curl -O https://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
 
 ```console
 user@server:~$ curl -O https://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
 user@server:~$ tar xvzf sqlite-autoconf-3300100.tar.gz
 user@server:~$ cd sqlite-*
 user@server:~$ ./configure
+user@server:~$ make
+user@server:~$ make install
+```
+### Need to recompile python to enable sqlite extentions
+
+```console
+user@server:~$ cd /usr/src/Python-3.7.4/
+user@server:~$ make clean
+user@server:~$ ./configure --enable-optimizations
+user@server:~$ make
 user@server:~$ make install
 ```
