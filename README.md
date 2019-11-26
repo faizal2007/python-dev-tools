@@ -4,20 +4,10 @@ Script related to initiate python enviroment
 ## Install Script 
 git clone git@github.com:wackoen/python-dev-tools.git
 
-## python virtual environment (python 3.7 - only test for this version)
-Create environment if not available
-```console
-user@server:~$ /usr/local/bin/python3 -m venv venv
-```
-Enable virtual environment
-```console
-user@server:~$ source venv/bin/activate
-```
-
 ### Sqlite (if require)
 ```
    + sometime it easy to use lite version db such as sqlite (for testing)
-   + if server/pc not provide (linux)
+   + if no sqlite install on server/pc (linux)
 ```
 
 ```console
@@ -35,4 +25,13 @@ user@server:~$ cd /usr/src/Python-3.7.4/
 user@server:~$ ./configure --enable-optimizations
 user@server:~$ make
 user@server:~$ make install
+```
+## python virtual environment (python 3.7 - only test for this version)
+Create environment if not available
+```console
+user@server:~$ /usr/local/bin/python3 -m venv venv
+```
+Enable virtual environment
+```console
+user@server:~$ source venv/bin/activate
 ```
