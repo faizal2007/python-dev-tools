@@ -32,7 +32,6 @@ user@server:~$ make install
 
 ```console
 user@server:~$ cd /usr/src/Python-3.7.4/
-user@server:~$ make clean
 user@server:~$ ./configure --enable-optimizations
 user@server:~$ make
 user@server:~$ make install
